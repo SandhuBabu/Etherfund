@@ -1,4 +1,4 @@
-export const LOAD_TIME = 1500;
+export const LOAD_TIME = 1400;
 export const PINATA_FILE_URI = 'https://gateway.pinata.cloud/ipfs/';
 export const MIN_CONTRIBUTION = 0.5;
 
