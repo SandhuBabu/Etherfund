@@ -1,0 +1,35 @@
+.theme-switch {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    color: red;
+}
+
+.switch-track {
+    display: inline-block;
+    height: 1em;
+    border-radius: 1.5em;
+    width: 2.75em;
+    background: #b9b7b79f; 
+    margin-right: 1em;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.switch-tip {
+    position: absolute;
+    top: -0.25em;
+    left: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #fffffff8;
+    transition: all 200ms;
+    box-shadow: var(--shadow);
+}
+
+.theme-switch:checked + .switch-tip {
+    transform: translateX(1.25em);
+    background: var(--primary);
+}

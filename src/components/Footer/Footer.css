@@ -1,0 +1,76 @@
+footer {
+    width: 100%;
+    min-height: 15em;
+    background: var(--bg2);
+    padding: 0 50px;
+    white-space: nowrap;
+}
+
+.foot-details {
+    width: 100%;
+    display: flex;
+    padding-top: 1em;
+}
+
+.foot-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .95em;
+}
+
+.foot-left h1 {
+    color: var(--primary);
+    font-size: 1.5em;
+}
+
+.foot-left address {
+    margin: .75em 0;
+}
+
+.icon-phone-mail {
+    margin-right: .75em;
+}
+
+.foot-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.foot-right a:hover {
+    transition: var(--transition-400);
+    color: var(--primary);
+}
+
+.footer-copyright {
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    color: var(--text-variant);
+    font-size: .75em
+}
+
+@media screen and (max-width: 721px) {
+    .foot-details {
+        flex-direction: column;
+    }
+
+    .foot-right,
+    .foot-left {
+        width: 100%;
+    }
+
+    .foot-left h1 {
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    .foot-right {
+        margin: 2em 0;
+        align-items: flex-start;
+    }
+}

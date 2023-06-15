@@ -1,0 +1,241 @@
+.nav-bar {
+    width: 100%;
+    height: var(--nav-h);
+    background: var(--bg2);
+    display: flex;
+    justify-content: space-between;
+    color: var(--text);
+    box-shadow: var(--shadow);
+    user-select: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.nav-icons {
+    font-size: 1.5em;
+    color: var(--text);
+    cursor: pointer;
+    display: block;
+    z-index: 8;
+    border-radius: 50%;
+}
+
+.left-nav {
+    width: fit-content;
+    height: 100%;
+    padding-left: 25px;
+}
+
+.brand-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ripple.drawer-opener {
+    margin-right: 24px;
+    border-radius: 50%;
+    display: none;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.logo-nav { 
+    height: 100%;
+    padding: 1.25em 1em;
+    cursor: pointer;
+    max-height: 4em;
+}
+
+.sidebar-drawer {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: var(--transition-400);
+    display: none;
+}
+
+.sidebar {
+    width: var(--sidebar-w);
+    height: 100%;
+    background: var(--bg1);
+    position: relative;
+    box-shadow: 2px 0px 15px -2px #494646bc;;
+}
+
+.drawer-closer {
+    width: calc(100% - var(--sidebar-w));
+    opacity: 0;
+    height: 100vh;
+}
+
+.right-nav {
+    width: auto;
+    height: 100%;
+    float: left;
+    padding-right: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links {
+    margin-right: 20px;
+    cursor: pointer;
+    transition: var(--transition-400);
+}
+
+.nav-links:hover,
+.nav-links.active {
+    color: var(--primary);
+    font-size: 1em;
+}
+
+
+.nav-links,
+.sidebar-li {
+    text-transform: capitalize;
+}
+
+.profile-icon-nav,
+.profile-icon-nav.active {
+    width: 1.15em;
+    height: 1.15em;
+    border: 0px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .25em;
+    font-size: 1.5em;
+}
+
+.profile-icon-nav:hover {
+    font-size: 1.5em;
+    background: var(--primary);
+    color: var(--white);
+}
+
+
+.btn-nav {
+    border-radius: 5px;
+    border: none;
+    color: var(--text);
+    padding: .5em 1em;
+    margin-right: 20px;
+    cursor: pointer;
+    background: var(--primary);
+    color: var(--white);
+    transition: var(--transition-400);
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+
+  .btn-nav span {
+    display: none;
+  }
+  
+  .btn-nav:hover {
+    background: var(--secondary);
+  }
+
+  .btn-nav span > * {
+    animation: spinner 500ms linear infinite;
+    transform-origin: center;
+}
+
+
+
+/* ======== Media Query ======== */
+@media screen and (max-width: 820px) {
+    .right-nav {
+        padding-right: 50px;
+    }
+
+    .right-nav .switch-track,
+    .nav-switch,
+    .nav-links {
+        display: none;
+    }
+    
+
+    .left-nav {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .ripple.drawer-opener {
+        display: block;
+    }
+
+    .sidebar-drawer {
+        display: flex;
+    }
+
+    .brand-nav-sidebar {
+        height: 15%;
+        justify-content: center;
+    }
+
+    .brand-nav-sidebar img {
+        width: 100%;
+    }
+
+    .sidebar-ul {
+        width: 100%;
+        height: auto;
+        padding: 0 5px;
+    }
+
+    .sidebar-li {
+        width: 100%;
+        height: 3.5em;
+        border-radius: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1px;
+        transition: var(--transition-400);
+    }
+
+    .sidebar-li:hover {
+        color: var(--primary);
+        color: var(--text);
+        background: var(--hover-bg);
+    }
+    
+    
+    .sidebar-ul a.active,
+    .sidebar-ul a.active .sidebar-li:hover {
+        width: 100%;
+        font-size: 16px;
+        background: #ecca8046;
+    }
+
+    .switch-theme-sidear {
+        width: 100%;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        bottom: 5em;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .logo-top-bar {
+        display: none;
+    }
+}

@@ -1,0 +1,79 @@
+.contribute-container {
+    width: 100%;
+    height: calc(100vh - var(--nav-h));
+    position: absolute;
+    top: var(--nav-h);
+    display: grid;
+    place-items: center;
+    z-index: 11;
+    backdrop-filter: blur(5px);
+}
+
+.contribute-form {
+    background-color: var(--bg1);
+    padding: 20px;
+    margin: 50px auto;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: -3px 3px 8px #c0c0c0;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contribute-form input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--primary);
+}
+
+
+
+.contribute-form input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.contribute-form input[type="button"] {
+    background: transparent;
+    color: var(--text);
+    padding: 10px 20px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.contribute-form input[type="submit"]:hover {
+    background: var(--primary-h);
+}
+
+.contribute-form input[type="submit"]:disabled {
+    background: var(--primary-h);
+}
+
+.contribute-form input[type="button"]:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+h1 {
+    font-size: 1rem;
+    text-align: left;
+    margin-inline: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}

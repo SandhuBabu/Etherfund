@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" id="light">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="icon" href="./images/logo-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+    <title>Etherfund</title>
+
+    <style>
+      :root { --bg: #FAF9F9; }
+      :root#dark { --bg: #08192a; }
+
+      #loading-message {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg);
+        z-index: 9999;
+        text-align: center;
+        line-height: 100vh;
+      }
+      
+      #loading-message span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="loading-message">
+      <span>Loading...</span>
+    </div>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script>
+      window.addEventListener('load', () => {
+        const loadingMessage = document.getElementById('loading-message');
+        loadingMessage.remove();
+      });
+    </script>
+
+  </body>
+</html>

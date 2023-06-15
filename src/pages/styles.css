@@ -1,0 +1,168 @@
+.no-campaigns {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* campaign page styles */
+.campaign-details-card-wrapper {
+  width: 100%;
+  height: 96vh;
+  display: grid;
+  place-items: center;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: calc(100% - 96px);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0 1em;
+    transition: var(--transition-400);
+  }
+  
+  .product-card:hover {
+    box-shadow: var(--shadow);
+  }
+  
+  .product-card img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 3%;
+    display: block; /* add this line to center the image */
+  }
+  
+  .product-details {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .product-details h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .category {
+    color: var(--grey);
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .description {
+    margin-top: 10px;
+  }
+
+  .goal-achieved {
+    background: var(--secondary);
+    color: var(--white);
+    padding: .5em .5em;
+    border-radius: 5px;
+    font-size: 1.15em;
+    font-weight: 600;
+    margin: 1em 0;
+  }
+  
+  .product-details .buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    justify-content: center !important;
+
+  }
+  
+  .contribute-now {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+
+  .contribute-now:hover {
+    background: var(--primary);
+  }
+  
+  .chat-now {
+    background-color: var(--white);
+    color: var(--secondary);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+    .product-card {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+
+    .product-card img {
+        margin-left: 20px;
+        width: 80%;
+    }
+
+    
+
+    .product-details {
+        width: 100%;
+        /* align-items: center; */
+    }
+
+    .buttons {
+        margin-top: 40px;
+       justify-content: center !important;
+        
+
+    }
+}
+
+.contribute-before {
+    font-size: 14px;
+    color: var(--secondary);
+    margin-top: 10px;
+}
+
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .product-card img {
+      width: 80%;
+    }
+    .product-details {
+      width: 100%; /* Set width to 100% */
+    }
+    .product-details h2 {
+      width: 100%;
+    }
+    .description {
+      width: 100%;
+    }
+    .product-details .buttons {
+        margin-top: 40px;
+        display: flex;
+        gap: 10px;
+        justify-content: center !important;
+    
+      }
+   
+  }
+/* campaign page styles */

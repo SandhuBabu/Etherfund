@@ -1,0 +1,204 @@
+/* create campaign page */
+.create-campaign-container {
+    width: 100%;
+    min-height: calc(100vh - var(--nav-h));
+    display: flex;
+    padding: 0 50px;
+    user-select: none;
+}
+
+.form-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.form-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-right img {
+    width: 60%;
+}
+
+/* create campaign form */
+.form-errors {
+    width: 25em;
+    position: absolute;
+    top: 5.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.errors {
+    width: 100%;
+    padding: .5em .75em;
+    border-radius: 5px;
+    margin-top: 3px;
+    display: flex;
+    background-color: rgb(222, 63, 63);
+    color: var(--white);
+    transition: var(--transition-400);
+}
+
+.error-msg {
+    width: 23em;
+    height: 100%;
+}
+
+.close-errors {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.create-campaign-form {
+    min-width: 30em;
+    max-width: 90%;
+    max-width: 90%;
+    height: 90%;
+    padding: .5em .75em;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.create-campaign-form h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: .5em 0 2em 0;
+    text-transform: capitalize;
+}
+
+.form-page-2 {
+    display: none;
+}
+
+.input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.input-section label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inputs {
+    outline: none;
+    height: 3em;
+    width: 100%;
+    resize: none;
+    margin-top: 5px;
+    padding: 0 10px;
+    background: transparent;
+    color: var(--text);
+    font-size: 14px;
+    letter-spacing: .5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+.inputs:valid {
+    border-color: var(--primary);
+}
+
+.inputs:focus {
+    border-width: 2px;
+}
+
+textarea.inputs {
+    height: 10em;
+    padding-top: 1em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+:root#dark .inputs.calendar::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="file"] {
+    line-height: 38px;
+}
+
+input[type="file"]::file-selector-button {
+    display: none;
+}
+
+
+.form-pagination {
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    width: 100%;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-btn {
+    width: 5em;
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.pagination-btn:hover {
+    background: var(--primary-h);
+}
+
+.pagination-btn:disabled {
+    cursor: not-allowed;
+    background: var(--disabled);
+}
+
+.submit-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.submit-btn {
+    min-width: 15em;
+    padding: .75em 3em;
+    border-radius: 5px;
+    border: none;
+    background: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    transition: var(--transition-400);
+}
+
+.submit-btn:hover {
+    background: var(--primary-h);
+}
+
+@media screen and (max-width: 992px) {
+    .form-right {
+        display: none;
+    }
+
+    .form-left {
+        width: 100%;
+    }
+}
+
+div.css-1dimb5e-singleValue {
+    color: var(--text) !important;
+    font-size: 14px !important;
+}

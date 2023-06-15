@@ -1,0 +1,7 @@
+
+.btn-text {
+  padding: .5em 1em;
+  background-color: var(--bg1);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}

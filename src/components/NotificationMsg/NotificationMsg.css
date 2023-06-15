@@ -1,0 +1,46 @@
+.notfication-msg-container {
+    min-width: 15em;
+    max-width: 20em;
+    height: 3em;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 1em;
+    right: -15em;
+    background: var(--bg1);
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    transition: all 500ms;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    z-index: 15;
+}
+
+.notification-content {
+    width: 100%;
+    height: 100%;
+    font-size: .75em;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.notification-content::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: 'close';
+    background: var(--bg1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.notification-content:hover::before {
+    display: flex;
+}

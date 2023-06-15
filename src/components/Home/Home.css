@@ -1,0 +1,46 @@
+.home-container {
+    width: 100%;
+    padding: 1em 50px 3em 50px;
+    min-height: calc(100vh - var(--nav-h));
+}
+
+.campaigns-home-container {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.campaigns-home-container:not(:first-child) {
+    margin-top: 3em;
+}
+
+.heading-campaign-type {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    margin-left: 10px;
+}
+
+.campaigns-home {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 1em 0 1em 10px;
+}
+
+.campaigns-home::-webkit-scrollbar {
+    display: none;
+}
+
+.show-more-campaigns-home {
+    font-size: .75em;
+    float: right;
+}
+
+@media screen and (max-width: 992px) {
+    .campaigns-home {
+        padding-left: 1em;
+    }
+}

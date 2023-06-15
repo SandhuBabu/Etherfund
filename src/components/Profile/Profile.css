@@ -1,0 +1,69 @@
+.profile-details-container {
+    width: 100%;
+    min-height: 20vh;
+    padding: 0 50px;
+    display: flex;
+    margin-top: 2em;
+}
+
+.profile-details {
+    width: 50%;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.25em;
+    background-color: var(--bg2);
+}
+
+.details-account-wallet span {
+    margin: 1em;
+}
+
+.yellow-text {
+    color: var(--primary);
+}
+
+.profile-details.logout-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+
+.logout-btn {
+    width: 9em;
+    height: 3em;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    color: var(--primary);
+    cursor: pointer;
+    background-color: transparent;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    transition: all 200ms;
+}
+
+.logout-btn:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+
+@media screen and (max-width: 640px) {
+    .profile-details-container {
+        display: block;
+        width: 100%;
+    }
+
+    .profile-details {
+        width: 100%;
+    }
+
+    .profile-details.logout-sec {
+        justify-content: flex-start;
+        
+        padding: 2em 0 1em 1em;
+    }
+}

@@ -1,0 +1,57 @@
+.progress-bar-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .progress-bar-container {
+    position: relative;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    text-align: center;
+    animation: progress 7s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes progress {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+  
+  .progressBar-label {
+    color: var(--black);
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .eth-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .eth-collected {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .eth-needed {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
