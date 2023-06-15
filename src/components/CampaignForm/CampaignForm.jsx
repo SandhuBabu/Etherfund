@@ -17,7 +17,6 @@ const categoryOptions = [
     { value: 'Education', label: 'Education' },
     { value: 'Medical', label: 'Medical' },
     { value: 'Business', label: 'Business' },
-    { value: 'Insurance', label: 'Insurance' },
     { value: 'Arts', label: 'Arts' },
     { value: 'Others', label: 'Others' },
 ]

@@ -14,6 +14,6 @@ export const LINKS = [
     { opt: 'Medical', path: '/category/Medical' },
     { opt: 'Education', path: '/category/Education' },
     { opt: 'Business', path: '/category/Business' },
-    { opt: 'Insurance', path: '/category/Insurance' },
+    { opt: 'Arts', path: '/category/Arts' },
     { opt: 'Others', path: '/category/Others' },
 ]
